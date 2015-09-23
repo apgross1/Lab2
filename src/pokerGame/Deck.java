@@ -13,10 +13,10 @@ public class Deck extends Card {
 	
 	public ArrayList<Card> makeDeck() {
 		ArrayList<Card> cardList = new ArrayList<Card>();
-		for (int j = 0; j < 13; j++) {
-			for (int k = 0; k < 4; k++) {
+		for (int j = 1; j < 14; j++) {
+			for (int k = 1; k < 5; k++) {
 				Card card = new Card();
-				card.setSuite(k);
+				card.setSuit(k);
 				card.setRank(j);
 				cardList.add(card);	
 			}

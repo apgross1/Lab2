@@ -30,7 +30,7 @@ public class DeckTest {
 	public void test() {
 		Deck deck = new Deck();
 		System.out.println(deck.getDeck().get(43).getRank());
-		System.out.println(deck.getDeck().get(43).getSuite());
+		System.out.println(deck.getDeck().get(43).getSuit());
 	}
 
 }

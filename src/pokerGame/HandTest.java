@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class CardTest{
+public class HandTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -28,9 +28,11 @@ public class CardTest{
 
 	@Test
 	public void test() {
-		Card card = new Card();
-		System.out.println(card.getRank());
-		System.out.println(card.getSuit());
+
+		Hand hand = new Hand();
+		Deck deck = new Deck();
+		hand.setHand(deck);
+		
 	}
 
 }
