@@ -9,21 +9,20 @@ public class Card {
 		this.createCard();
 	}
 	
-	public int getRank() {
+	protected int getRank() {
 		return rank;
 	}
-	private void setRank(int rank) {
+	protected void setRank(int rank) {
 		this.rank = rank;
 	}
-	public int getSuite() {
+	protected int getSuite() {
 		return suite;
 	}
-	private void setSuite(int suite) {
+	protected void setSuite(int suite) {
 		this.suite = suite;
 	}
-	//Creates random Rank and Suite values for instance of Card
-	private void createCard() {
-		this.setRank((int) (1 + Math.random() * 14));
-		this.setSuite((int) (1 + Math.random() * 4));
+	
+	protected void createCard() {
 	}
+
 }
